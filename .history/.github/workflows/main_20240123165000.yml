@@ -1,7 +1,0 @@
-name: "Build & Send"
-on:
-    
-    push:
-      branches:
-        - dev
-        - test 

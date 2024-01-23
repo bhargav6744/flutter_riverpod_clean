@@ -3,7 +3,7 @@
 # separate terms of service, privacy policy, and support
 # documentation.
 
-name: Dart
+name: Build & Send
 
 on:
   push:
@@ -13,7 +13,8 @@ on:
 
 jobs:
   build:
-    runs-on: ubuntu-latest
+    name: Build & Send
+    runs-on: macos-latest
 
     steps:
       - uses: actions/checkout@v3
