@@ -1,0 +1,9 @@
+name: "Build & Send"
+
+on:
+    push:
+      branches:
+        - development
+        - production 
+
+

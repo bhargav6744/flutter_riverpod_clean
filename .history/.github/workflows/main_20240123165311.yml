@@ -1,0 +1,12 @@
+name: "Build & Send"
+
+on:
+    push:
+      branches:
+        - development
+        - production 
+        
+jobs:
+  build:
+    name: "Build & Send" 
+    runs-on: mac
