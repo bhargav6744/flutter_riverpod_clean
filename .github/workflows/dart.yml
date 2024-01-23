@@ -48,10 +48,10 @@ jobs:
       # - name: Build appBundle
       #   run: flutter build appbundle
 
-      #   #8 build ipa
-      # - name: Build IPA
-      #   run:
-      #     flutter build ipa --no-codesign
+        #8 build ipa
+      - name: Build IPA
+        run:
+          flutter build ipa -flavor dev --no-codesign
       # - name: Compress Archives and IPAs
       #   run: |
       #     cd build
