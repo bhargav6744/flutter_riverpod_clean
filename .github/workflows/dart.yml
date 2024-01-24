@@ -66,12 +66,10 @@ jobs:
             build/ios_build.tar.gz
       
       - name: Notify on Telegram
-        uses: appleboy/telegram-action@master
-        with:
-          token: '6393418713:AAEZ6DfpeRKJ8HSxyIZ0khRAfn-rffT9vLg'
-          to: '-4011391670'
-          message: |
-            ${{ github.actor }} Created Build:
+        uses: Lukasss93/telegram-action@v2
+        env:
+          TELEGRAM_TOKEN: '6393418713:AAEZ6DfpeRKJ8HSxyIZ0khRAfn-rffT9vLg'
+          TELEGRAM_CHAT: '-4011391670'
             
       #   #10 create release with those builds 
       # - name: Create Release
