@@ -1,0 +1,3 @@
+extension BoolExtension on bool {
+  
+}
